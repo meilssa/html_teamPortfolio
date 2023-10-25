@@ -1,0 +1,80 @@
+#frame {
+    width: 100%;
+    height: 74vh;
+    position: relative;
+    overflow: hidden;
+    
+    .slider {
+        width: 900%;
+        transition: 0.5s;
+        display: flex;
+        flex-wrap: nowrap;
+        article {
+            width: 100%;
+            height: 100%;
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+    ul.arrowbox{
+        display: flex;
+        li{
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            top: 30vh;
+            background: transparent;
+            border-radius: 50%;
+            border: 1px solid white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            a{
+                display: flex;
+                justify-content: center;align-items: center;
+                img{
+                    width: 80%;
+                    height: 80%;
+                    object-fit: cover;
+                }
+            }
+        }
+        .prev{
+            transform: rotate(90deg);
+            left: 2vw;
+        }
+        .next{
+            transform: rotate(270deg);
+            right: 2vw;
+        }
+    }
+    .btns{
+        position: absolute;
+        bottom: 2vh;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 10;
+
+        li{
+            float: left;
+            margin-right: 20px;
+
+            a{
+                display: block;
+                width: 15px;
+                height: 15px;
+                background-color: black;
+                border-radius: 50%;
+            }
+            &.on{
+                a{
+                    background-color: red;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,103 @@
+#header {
+	width: 100%;
+	height: 10vh;
+	.inner {
+		width: 1180px;
+		height: 100%;
+		margin: 0 auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 0px 50px;
+
+		h1 {
+			position: absolute;
+			left: 20vw;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			.logo {
+				img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+				}
+			}
+		}
+
+		#gnb {
+			display: flex;
+			height: 100%;
+			gap: 100px;
+			position: relative;
+			text-align: center;
+			> li {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				> a {
+					font: 25px/1 'Cafe24Supermagic-Bold-v1.0';
+					color: black;
+				}
+				.sub {
+					position: absolute;
+					opacity: 0;
+					top: 10vh;
+					transition: opacity 0.1s, top 0.1s;
+					z-index: -3;
+					background-color: #eee;
+					border-top: 1px solid blue;
+					background-image: url(../../img/gnb_openDiv_bg.jpg);
+					background-size: cover;
+					background-repeat: no-repeat;
+					background-position: 0% 50%;
+
+					li {
+						margin-top: 50px;
+						transition: 1s;
+						opacity: 0;
+						a {
+							display: block;
+							width: 2000px;
+							font-size: 30px;
+							text-align: center;
+							color: #000;
+							height: calc(200px / 3);
+							&:hover {
+								background-color: rgba($color: #000000, $alpha: 0.3);
+								color: white;
+							}
+						}
+					}
+				}
+				&:hover {
+					.sub {
+						height: 400px;
+						opacity: 1;
+						z-index: 3;
+						li {
+							opacity: 1;
+							transition: 0.5s;
+						}
+					}
+				}
+			}
+		}
+		.login {
+			display: flex;
+			gap: 20px;
+			position: absolute;
+			right: 5%;
+			> a {
+				font: 20px/1 'Cafe24Supermagic-Bold-v1.0';
+				color: #999;
+				&:hover {
+					color: #550adf;
+				}
+			}
+			span {
+				border-right: 1px solid black;
+			}
+		}
+	}
+}

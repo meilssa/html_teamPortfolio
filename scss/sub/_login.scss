@@ -1,0 +1,141 @@
+#login {
+	width: 100%;
+	position: relative;
+	h2 {
+		width: 100%;
+		font-size: 50px;
+		text-align: center;
+		padding-top: 4%;
+		margin-bottom: 4%;
+	}
+	> span {
+		display: block;
+		margin: 0 auto;
+		width: 1180px;
+		height: 1px;
+		background-color: black;
+	}
+	.login_Box {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 80px 0px;
+		h3 {
+			height: 50px;
+			img {
+				margin-right: 10px;
+			}
+			text-align: center;
+		}
+		.formBox {
+			width: 100%;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			.formBox_IN {
+				width: 30%;
+				height: 40%;
+				text-align: center;
+				> P {
+					width: 562px;
+					height: 100%;
+					font-size: 40px;
+					> input {
+						width: 100%;
+						height: 18px;
+						padding: 30px;
+						font-size: 20px;
+						margin: -2px;
+						border: none;
+						border: 1px solid rgba($color: #000, $alpha: 0.2);
+					}
+				}
+			}
+			.loginUtil {
+				width: 100%;
+				display: flex;
+				justify-content: center;
+				gap: 12%;
+				padding: 20px 0px;
+				p {
+					font-size: 20px;
+					text-align: center;
+					line-height: 100%;
+					input {
+						position: absolute;
+						left: 35%;
+						width: 20px;
+						height: 20px;
+						cursor: pointer;
+					}
+				}
+				.findArea {
+					> a {
+						font-size: 20px;
+						color: black;
+					}
+					> span {
+						border-left: 1px solid black;
+						margin: 10px;
+					}
+				}
+			}
+		}
+		.loginBtn {
+			width: 15%;
+			height: 5vh;
+			display: flex;
+			justify-content: center;
+			border: 1px solid rgba($color: #000, $alpha: 0.2);
+			background-color: blue;
+			border-radius: 25px;
+			cursor: pointer;
+			margin-top: 30px;
+			.loginBtnA {
+				color: white;
+				font: 15px/5vh 'arial';
+			}
+		}
+		.grayBox {
+			width: 32%;
+			height: 20vh;
+			border: 1px solid rgba($color: #000, $alpha: 0.2);
+			text-align: center;
+			padding: 40px 70px;
+			background-color: #f6f6f6;
+			margin-top: 20px;
+			> p {
+				font-size: 16px;
+				font-family: 'arial';
+				line-height: 30px;
+				color: #555;
+				span {
+					color: #009bfa;
+					font: bold 16px 'arial';
+				}
+			}
+			.sighUpBtn {
+				display: inline-block;
+				height: 46px;
+				padding: 0 53px;
+				border: 2px solid #009bfa;
+				border-radius: 25px;
+				margin-top: 35px;
+				font-size: 18px;
+				font-family: 'arial';
+				color: #009bfa;
+				line-height: 44px;
+				cursor: pointer;
+			}
+		}
+		.login_txt {
+			font-size: 18px;
+			line-height: 30px;
+			text-align: center;
+			margin-top: 35px;
+		}
+	}
+}

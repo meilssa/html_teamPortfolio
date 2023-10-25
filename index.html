@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>팀프로젝트 메인페이지</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <script defer src="js/common/header.js"></script>
+    <script defer src="js/main/slide.js"></script>
+    <script defer src="js/main/time.js"></script>
+    <script defer src="js/main/info.js"></script>
+    <script defer src="js/main/benefits.js"></script>
+    <script defer src="js/main/att.js"></script>
+    <script src="https://kit.fontawesome.com/c12878d3ba.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section id="header">
+        <div class="inner">
+            <h1>
+                <a href="index.html" class="logo">
+                    <img src="./img/logo.png" alt="롯데월드 로고">
+                </a>
+            </h1>
+            <ul id="gnb">
+                <li class="on">
+                    <a href="">즐길거리</a>
+                    <ul class="sub">
+                        <li><a href="./html/Things_to_do.html">어트랙션</a></li>
+                        <li><a href="./html/Festival.html">페스티벌</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">이용가이드</a>
+                    <ul class="sub">
+                        <li><a href="guide.html">파크 이용안내</a></li>
+                        <li><a href="location.html">오시는 길</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="">소통서비스</a>
+                    <ul class="sub">
+                        <li><a href="communication.html">공지사항</a></li>
+                        <li><a href="ask.html">고객소리함</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="login">
+                <a href="login.html">로그인</a>
+                <span></span>
+                <a href="#">회원가입</a>
+            </div>
+        </div>
+
+    </section>
+    <section id="frame" onload="refresh()">
+        <div class="slider">
+            <article><img src="./img/메인페이지/메인페이지_슬라이드_1번.jpg" alt="네이버 인기웹툰 다크문 달의제단의 캐릭터들이 롯데월드 앞에서 사진찍는 장면"></article>
+            <article><img src="./img/메인페이지/메인페이지_슬라이드_2번.jpg" alt="롯데월드의 마스코트인 로티와 로리가 마법을 쓰는 모습"></article>
+            <article><img src="./img/메인페이지/메인페이지_슬라이드_3번.jpg" alt="롯데월드 내의 매직아일랜드에서 공연을 한다는 포스터"></article>
+            <article><img src="./img/메인페이지/메인페이지_슬라이드_4번.jpg" alt="매직아일랜드 매직캐슬 뒷편에 있는 호러 체험시설을 홍보하는 포스터"></article>
+            <article><img src="./img/메인페이지/메인페이지_슬라이드_5번.jpg" alt="롯데월드에서 제작한 티켓대용 반팔티의 홍보포스터"></article>
+            <article><img src="./img/메인페이지/메인페이지_슬라이드_6번.jpg" alt="롯데월드에서 추석선물세트로 롯데월드 이용권을 할인하여 판다는 포스터"></article>
+            <article><img src="./img/메인페이지/메인페이지_슬라이드_7번.jpg"
+                    alt="문어를 홍보용 이미지로 사용하여 할인된 가격의 종합이용권을 구매할 시 문어 콜라보 양말을 판다는 내용의 포스터"></article>
+            <article><img src="./img/메인페이지/메인페이지_슬라이드_8번.jpg" alt="신한카드로 이용권 구매시 할인한다는 내용의 포스터"></article>
+            <article><img src="./img/메인페이지/메인페이지_슬라이드_9번.jpg" alt="중고등학생 동반 1인까지 최대 38%할인한다는 내용의 포스터"></article>
+        </div>
+        <ul class="arrowbox">
+            <li class="prev">
+                <a href="#"><img src="img/메인페이지/화살표.png" alt="이전 슬라이드로 이동"></a>
+            </li>
+            <li class="next">
+                <a href="#"><img src="img/메인페이지/화살표.png" alt="이후 슬라이드로 이동"></a>
+            </li>
+        </ul>
+        <ul class="btns">
+            <li class="on"><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+            <li><a href="#"></a></li>
+        </ul>
+    </section>
+    <section id="time">
+        <article>
+            <img src="img/메인페이지/시계.png" alt="시계모양 이미지" class="clock">
+            <h2>오늘의 파크 운영시간</h2>
+            <p class="p bt timer">
+                <span>12<b>:</b>50</span>
+            </p>
+            <span class="bar">&nbsp;-&nbsp;</span>
+            <p class="p at timer">
+                <span>22<b>:</b>00</span>
+            </p>
+        </article>
+        <article>
+            <img src="img/메인페이지/시계.png" alt="시계모양 이미지" class="clock">
+            <h2>현재시간</h2>
+            <p class="p day timer"></p>
+            <p class="p bt timer" id="nt"></p>
+        </article>
+    </section>
+    <section id="review">
+        <div class="inner">
+            <div class="txt">
+                <p class="title">
+                    롯데월드&nbsp; <span>상호를 부탁해!</span>
+                </p>
+                <p class="detail">
+                    현주와 이호가 함께하는 생생한 포토리뷰
+                </p>
+            </div>
+            <div class="poto">
+                <ul>
+                    <li><img src="./img/메인페이지/리뷰_첫번째.jpg" alt="아이브가 회전목마 앞에서 사진찍는 모습"></li>
+                    <li><img src="./img/메인페이지/리뷰_두번째.jpg" alt="로티와 로리가 스케이트장에서 펭귄을 잡고 다니는 모습">
+                    <li><img src="./img/메인페이지/리뷰_세번째.jpg" alt="새벽녘 붉은달을 배경으로 마법의 성을 로우앵글로 찍은 모습">
+                    <li><img src="./img/메인페이지/리뷰_네번째.jpg" alt="오페라 가면을 쓴 남녀 한쌍이 축제에서 춤을추는 모습">
+                    <li><img src="./img/메인페이지/리뷰_다섯번째.jpg" alt="롯데월드의 매직캐슬의 정면 모습">
+                    <li><img src="./img/메인페이지/리뷰_여섯번째.jpg" alt="롯데월드의 놀이기구인 아트란티스를 타며 즐거워하는 사람들의 모습"></li>
+                    <li><img src="./img/메인페이지/리뷰_일곱번째.jpg" alt="회전그네를 탄 아이들의 즐거워하는 모습">
+                    <li><img src="./img/메인페이지/리뷰_여덟번째.jpg" alt="롤러코스터를 탄 사람들이 즐거워 하는 모습"></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="Benefits">
+        <div class="inner">
+            <p class="Benefits_tit"><span>나에게 꼭 맞는 혜택&nbsp;</span>알아볼까요?</p>
+            <p class="Benefits_subtit">현재 진행 중인 할인혜택을 알아보세요.</p>
+            <div class="art_box">
+                <article>
+                    <div class="pic">
+                        <img src="./img/메인페이지/이달의혜택_1번.jpg" alt="다크문 카드">
+                    </div>
+                    <p class="price">47,000원</p>
+                    <h3>한정판 다크 문 패키지</h3>
+                </article>
+                <article>
+                    <div class="pic">
+                        <img src="./img/메인페이지/이달의혜택_2번.jpg" alt="사람의 손 위에 신한카드가 얹어진 모습">
+                    </div>
+                    <p class="price">33,000원</p>
+                    <h3>신한카드X롯데월드 할인 안내</h3>
+                </article>
+                <article>
+                    <div class="pic">
+                        <img src="./img/메인페이지/이달의혜택_3번.jpg" alt="삼성카드의 마스코트들이 삼성카드를 들고 가는 모습">
+                    </div>
+                    <p class="price">33,000원</p>
+                    <h3>삼성카드와 함께하는 롯데월드</h3>
+                </article>
+                <article>
+                    <div class="pic">
+                        <img src="./img/메인페이지/이달의혜택_4번.jpg" alt="무너가 날라다니는 모습">
+                    </div>
+                    <p class="price">38,000원</p>
+                    <h3>롯데월드 x 무너 콜라보 프로모션</h3>
+                </article>
+            </div>
+            <div class="art_box">
+                <article>
+                    <div class="pic">
+                        <img src="./img/메인페이지/이달의혜택_5번.jpg" alt="모니모 카드">
+                    </div>
+                    <p class="price">31,000원</p>
+                    <h3>모니모니해도 모니모</h3>
+                </article>
+                <article>
+                    <div class="pic">
+                        <img src="./img/메인페이지/이달의혜택_6번.jpg" alt="SK telecom의 로고">
+                    </div>
+                    <p class="price">37,200원</p>
+                    <h3>SKT 멤버십(기본제휴)</h3>
+                </article>
+                <article>
+                    <div class="pic">
+                        <img src="./img/메인페이지/이달의혜택_7번.jpg" alt="KT 카드">
+                    </div>
+                    <p class="price">31,000원</p>
+                    <h3>KT 멤버십(기본제휴)</h3>
+                </article>
+                <article>
+                    <div class="pic">
+                        <img src="./img/메인페이지/이달의혜택_8번.png" alt="우리인재개발원의 로고">
+                    </div>
+                    <p class="price">1,000,000원</p>
+                    <h3>우리인재개발원 멤버십</h3>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section id="information">
+        <p class="information_tit">다양한 공연 및 퍼레이드&nbsp;<span>정보를 한눈에!</span></p>
+        <p class="information_subtit">다양한 공연 정보를 확인해보세요.</p>
+        <!-- 이미지 넣기 -->
+        <div class="info_box">
+            <ul id="info">
+                <li><img src="./img/메인페이지/퍼레이드_슬라이드_1번.jpg" alt="롯데월드의 구름위에 종이배가 떠있는 모양의 퍼레이드 기구"></li>
+                <li><img src="./img/메인페이지/퍼레이드_슬라이드_2번.jpg" alt="롯데월드의 동물 주민들과 시계가 퍼레이드 행진을 하는 모습"></li>
+                <li><img src="./img/메인페이지/퍼레이드_슬라이드_3번.jpg" alt="흰색의 제복을입은 남성과 순백의 드레스를 입은 여성 한쌍이 춤을추는 모습"></li>
+                <li><img src="./img/메인페이지/퍼레이드_슬라이드_4번.jpg" alt="동물옷을 입은 남녀한쌍이 춤을추는 모습"></li>
+                <li><img src="./img/메인페이지/퍼레이드_슬라이드_5번.jpg" alt="뱀파이어의 외형을 가진 동물탈의 모습"></li>
+                <li><img src="./img/메인페이지/퍼레이드_슬라이드_6번.jpg" alt="금관악기를 부르며 앞으로 나아가는 여성들의 모습"></li>
+                <li><img src="./img/메인페이지/퍼레이드_슬라이드_7번.jpg" alt="퍼레이드에서 금관악기들과 탐탐등의 악기들을 연주하며 행진하는 모습"></li>
+            </ul>
+        </div>
+        <div class="info_btns">
+            <div class="info_prev">PREV</div>
+            <div class="info_next">NEXT</div>
+        </div>
+    </section>
+    <section class="att">
+        <h2 class="att_h2"><span>재미있고 즐거운</span> 다양한 어트랙션</h2>
+        <ul class="attUl">
+            <li class="on"><a href="#">아이와 함께</a></li>
+            <li><a href="#">야외에서 신나게</a></li>
+            <li><a href="#">실내에서 쾌적하게</a></li>
+        </ul>
+        <div class="att_all_inner">
+            <article class="att_inner on">
+                <div class="att_box">
+                    <div class="att_img">
+                        <img src="./img/메인페이지/어트랙션_1번.jpg" alt="">
+                    </div>
+                    <div class="attTxt">
+                        <h3>언더씨킹덤</h3>
+                        <p>아이와 함께 떠나는 해저왕국 탐험!</p>
+                    </div>
+                </div>
+                <div class="att_box">
+                    <div class="att_img">
+                        <img src="./img/메인페이지/어트랙션_2번.jpg" alt="">
+                    </div>
+                    <div class="attTxt">
+                        <h3>유레카</h3>
+                        <p>높이높이 날아올라요~</p>
+                    </div>
+                </div>
+                <div class="att_box">
+                    <div class="att_img">
+                        <img src="./img/메인페이지/어트랙션_3번.jpg" alt="">
+                    </div>
+                    <div class="attTxt">
+                        <h3>점핑피쉬</h3>
+                        <p>신나는 해저여행</p>
+                    </div>
+                </div>
+                <div class="att_box">
+                    <div class="att_img">
+                        <img src="./img/메인페이지/어트랙션_4번.jpg" alt="">
+                    </div>
+                    <div class="attTxt">
+                        <h3>스윙팡팡</h3>
+                        <p>로티와 친구들이 함께 팡팡~</p>
+                    </div>
+                </div>
+                <div class="att_box">
+                    <div class="att_img">
+                        <img src="./img/메인페이지/어트랙션_5번.jpg" alt="">
+                    </div>
+                    <div class="attTxt">
+                        <h3>매직붕붕카</h3>
+                        <p>친구들과 신나게 경주해보아요!</p>
+                    </div>
+                </div>
+                <div class="att_box">
+                    <div class="att_img">
+                        <img src="./img/메인페이지/어트랙션_6번.jpg" alt="">
+                    </div>
+                    <div class="attTxt">
+                        <h3>키즈토리아</h3>
+                        <p>마음껏 즐길수 있는 거대한 동화속 세상</p>
+                    </div>
+                </div>
+            </article>
+            <article class="att_inner">
+                <div class="att_box">
+                    <div class="att_img">
+                        <img src="./img/메인페이지/어트랙션2_1번.jpg" alt="">
+                    </div>
+                    <div class="attTxt">
+                        <h3>자이로스핀</h3>
+                        <p>자이로 시리즈 3번째!</p>
+                    </div>
+                </div>
+                <div class="att_box">
+                    <div class="att_img">
+                        <img src="./img/메인페이지/어트랙션2_2번.jpg" alt="">
+                    </div>
+                    <div class="attTxt">
+                        <h3>혜성특급</h3>
+                        <p>특급열차와 함께 떠나요</p>
+                    </div>
+                </div>
+                <div class="att_box">
+                    <div class="att_img">
+                        <img src="./img/메인페이지/어트랙션2_3번.jpg" alt="">
+                    </div>
+                    <div class="attTxt">
+                        <h3>자이로스윙</h3>
+                        <p>자유낙하와 자유회전을 동시에</p>
+                    </div>
+                </div>
+                <div class="att_box">
+                    <div class="att_img">
+                        <img src="./img/메인페이지/어트랙션2_4번.jpg" alt="">
+                    </div>
+                    <div class="attTxt">
+                        <h3>아트란티스</h3>
+                        <p>어트랙션의 혁명 최고의 스릴</p>
+                    </div>
+                </div>
+                <div class="att_box">
+                    <div class="att_img">
+                        <img src="./img/메인페이지/어트랙션2_5번.jpg" alt="">
+                    </div>
+                    <div class="attTxt">
+                        <h3>번지드롭</h3>
+                        <p>번지점프의 짜릿한 묘미!</p>
+                    </div>
+                </div>
+                <div class="att_box">
+                    <div class="att_img">
+                        <img src="./img/메인페이지/어트랙션2_6번.jpg" alt="">
+                    </div>
+                    <div class="attTxt">
+                        <h3>회전그네</h3>
+                        <p>빙글빙글 멈출 수 없는 재미</p>
+                    </div>
+                </div>
+            </article>
+            <article class="att_inner">
+                <div class="att_box">
+                    <div class="att_img">
+                        <img src="./img/메인페이지/어트랙션3_1번.jpg" alt="">
+                    </div>
+                    <div class="attTxt">
+                        <h3>후룸라이드</h3>
+                        <p>색다른 모험, 쥬라기 시대로</p>
+                    </div>
+                </div>
+                <div class="att_box">
+                    <div class="att_img">
+                        <img src="./img/메인페이지/어트랙션3_2번.jpg" alt="">
+                    </div>
+                    <div class="attTxt">
+                        <h3>신밧드의 모험</h3>
+                        <p>신비한 모험을 떠나요~</p>
+                    </div>
+                </div>
+                <div class="att_box">
+                    <div class="att_img">
+                        <img src="./img/메인페이지/어트랙션3_3번.jpg" alt="">
+                    </div>
+                    <div class="attTxt">
+                        <h3>파라오의 분노</h3>
+                        <p>실감나는 라이드를 즐기자!</p>
+                    </div>
+                </div>
+                <div class="att_box">
+                    <div class="att_img">
+                        <img src="./img/메인페이지/어트랙션3_4번.jpg" alt="">
+                    </div>
+                    <div class="attTxt">
+                        <h3>스페인 해적선</h3>
+                        <p>거친 파도와 같은 아찔함!</p>
+                    </div>
+                </div>
+                <div class="att_box">
+                    <div class="att_img">
+                        <img src="./img/메인페이지/어트랙션3_5번.jpg" alt="">
+                    </div>
+                    <div class="attTxt">
+                        <h3>후렌치 레볼루션</h3>
+                        <p>숨막히는 롤러코스터의 매력</p>
+                    </div>
+                </div>
+                <div class="att_box">
+                    <div class="att_img">
+                        <img src="./img/메인페이지/어트랙션3_6번.jpg" alt="">
+                    </div>
+                    <div class="attTxt">
+                        <h3>범퍼카</h3>
+                        <p>좌충우돌 부딪히는 즐거운 소리</p>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+    <footer>
+        <div class="inner" id="footer">
+            <div class="footer_box">
+                <h1>
+                    <img src="img/footer_logo.png" alt="">
+                </h1>
+                <ul>
+                    <li><a href="https://www.wooriac.co.kr/">Woori</a></li>
+                    <span></span>
+                    <li><a href="https://adventure.lotteworld.com/kor/main/index.do">롯데월드</a></li>
+                    <span></span>
+                    <li><a href="https://www.kakaocorp.com/page/">카카오</a></li>
+                    <span></span>
+                    <li>
+                        <a href="https://bit.ly/45lUQ69">이용약관</a>
+                    </li>
+                </ul>
+                <p>&copy; 롯데월드 어드벤처 (Woori)</p>
+            </div>
+            <div class="footer_under">
+                <p class="music_Cheshire">상호 생일<span>05.12.23</span></p>
+                <p class="muisc_party">크리스마스<span>12.25</span></p>
+
+                <form action="https://www.google.com/search" method="GET">
+                    <div class="search" title="GOOGLE 새 탭">
+                        <input type="text" name="query" placeholder="검색어를 입력해 주세요">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

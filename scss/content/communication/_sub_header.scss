@@ -1,0 +1,55 @@
+#notifi_sub_header {
+	max-width: 1170px;
+	height: 10vh;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin: 0 auto;
+	.notifi_inb {
+		width: 100%;
+		display: flex;
+		gap: 5%;
+		.commun_sub_header_titBox {
+			display: flex;
+			gap: 20px;
+			font-size: 18px;
+			color: #aaa;
+			.fa-angle-down {
+				border: 1px solid #ddd;
+				border-radius: 50%;
+				cursor: pointer;
+				width: 20px;
+				height: 20px;
+				font-size: 10px;
+				line-height: 20px;
+				text-align: center;
+			}
+		}
+	}
+	.commun_shareBox {
+		display: flex;
+		font-size: 25px;
+		gap: 20px;
+		> a {
+			width: 50px;
+			height: 50px;
+			border: 1px solid #ddd;
+			border-radius: 50%;
+			line-height: 50px;
+			color: #000;
+			text-align: center;
+			&:hover {
+				color: #fff;
+				background-color: #000;
+			}
+		}
+	}
+}
+.notifi_hTwo {
+	width: 1170px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	font-size: 50px;
+	padding: 30px;
+}

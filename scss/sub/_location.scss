@@ -1,0 +1,252 @@
+#location {
+	width: 100%;
+	margin-bottom: 20px;
+	.location_inner {
+		width: 1180px;
+		margin: 0 auto;
+		.location_GoHome {
+			width: 100%;
+			height: 10vh;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			.fa-house {
+				color: #000;
+				font-size: 30px;
+			}
+		}
+		>h1 {
+			width: 100%;
+			height: 20vh;
+			font-size: 50px;
+			text-align: center;
+			line-height: 20vh;
+		}
+		.map {
+			width: 100%;
+			height: 45vh;
+			background-image: url(../img/location/adv_map.jpg);
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+		.mapBtn {
+			width: 100%;
+			height: 10vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			>a {
+				border-radius: 30px;
+				display: block;
+				width: 20vw;
+				height: 8vh;
+				text-align: center;
+				line-height: 8vh;
+				font-size: 25px;
+				color: #550adf;
+				border: 2px solid #550adf;
+			}
+		}
+		.container {
+			margin-top: 20px;
+			width: 100%;
+			.locaT {
+				width: 100%;
+				display: flex;
+				align-items: center;
+				font-size: 20px;
+				&::before {
+					content: '';
+					display: block;
+					width: 30px;
+					height: 30px;
+					background-image: url(../../img/location/directions_icon1.png);
+					background-position: center;
+					background-size: contain;
+					background-repeat: no-repeat;
+					margin-right: 10px;
+				}
+			}
+			.locaDiv {
+				border-top: 1px solid #e1e1e1;
+				margin-top: 40px;
+				padding-top: 40px;
+				display: flex;
+				// 공통 tit
+				.loca_tit {
+					font-size: 25px;
+					margin-bottom: 20px;
+				}
+				.leftDiv {
+					width: 300px;
+					ul {
+						width: 100%;
+						li {
+							width: 100%;
+							display: flex;
+							align-items: center;
+							margin-top: 10px;
+							.loca_label {
+								display: flex;
+								align-items: center;
+								margin-right: 20px;
+								>span {
+									display: block;
+									width: 30px;
+									height: 30px;
+									color: #fff;
+									text-align: center;
+									line-height: 30px;
+									border-radius: 50%;
+									margin-right: 5px;
+								}
+							}
+						}
+					}
+				}
+				.midDiv {
+					width: 600px;
+					ul {
+						li {
+							width: 100%;
+							display: flex;
+							align-items: center;
+							gap: 10px;
+							margin-top: 10px;
+
+							>p {
+								color: #888;
+							}
+							.loca_label {
+								width: 40px;
+								height: 30px;
+								display: flex;
+								justify-content: center;
+								align-items: center;
+								border-radius: 50px;
+								color: #fff;
+							}
+							&:nth-of-type(1) {
+								margin-top: 0;
+								.loca_label {
+									background-color: #5ab354;
+								}
+							}
+							&:nth-of-type(2) {
+								.loca_label {
+									background-color: #e04582;
+								}
+							}
+							&:nth-of-type(3) {
+								.loca_label {
+									background-color: #366fc6;
+								}
+							}
+							&:nth-of-type(4) {
+								.loca_label {
+									background-color: #9e7940;
+								}
+							}
+						}
+					}
+				}
+				.rightDiv {
+					width: 280px;
+					.busBtn {
+						width: 100%;
+						height: 8vh;
+						text-align: center;
+						line-height: 8vh;
+						border: 2px solid #550adf;
+						border-radius: 30px;
+						>a {
+							display: block;
+							width: 100%;
+							height: 100%;
+							border-radius: 30px;
+							color: #550adf;
+							font-size: 20px;
+						}
+					}
+				}
+			}
+			.parkingDiv {
+				margin-top: 40px;
+				padding-top: 40px;
+				margin-bottom: 20vh;
+				.txtBox {
+					width: 100%;
+					display: flex;
+					align-items: center;
+					justify-content: flex-start;
+					.pk_tit {
+						width: 20%;
+						font-size: 25px;
+						padding-right: 5vw;
+					}
+					.pkBtn {
+						width: 15vw;
+						height: 8vh;
+						border: 2px solid #550adf;
+						text-align: center;
+						line-height: 8vh;
+						border-radius: 30px;
+						>a {
+							display: block;
+							width: 100%;
+							height: 100%;
+							border-radius: 30px;
+							color: #550adf;
+							font-size: 20px;
+						}
+					}
+				}
+				.t1 {
+					margin-top: 20px;
+					font-size: 20px;
+					table {
+						border-collapse: collapse;
+						width: 100%;
+						thead {
+							border-top: 2px solid black;
+							width: 100%;
+							height: 10vh;
+							border-bottom: 1px solid #e1e1e1;
+							background-color: #e1e1e1;
+						}
+						tbody {
+							width: 100%;
+							tr {
+								td {
+									padding: 20px;
+									width: 30%;
+									text-align: center;
+									height: 10vh;
+									border-bottom: 1px solid #e1e1e1;
+									border-left: 1px solid #e1e1e1;
+									span {
+										font-size: 14px;
+									}
+								}
+							}
+						}
+					}
+				}
+				.bttTxt {
+					margin-top: 20px;
+					width: 100%;
+					font-size: 20px;
+					span {
+						margin-left: 18px;
+						color: #555;
+						em {
+							font-style: normal;
+							color: #ff5630;
+						}
+					}
+				}
+			}
+		}
+	}
+}

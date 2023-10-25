@@ -1,0 +1,34 @@
+@charset "utf-8";
+@font-face {
+	font-family: 'Cafe24Supermagic-Bold-v1.0';
+	src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2307-2@1.0/Cafe24Supermagic-Bold-v1.0.woff2')
+		format('woff2');
+	font-weight: 700;
+	font-style: normal;
+}
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+@import './common/reset';
+@import './common/header';
+@import './common/footer';
+// 슬라이드
+@import './content/frame';
+// 시간
+@import './content/time';
+// 리뷰
+@import './content/review';
+// 혜택
+@import './content/benefits';
+// 퍼레이드 정보
+@import './content/information';
+// 어트렉션 정보
+@import './content/att';
+//
+@import './content/communication/sub_header';
+@import './content/communication/notification';
+@import './content/communication/ask';
+@import './sub/location';
+@import './sub/guide';
+@import './sub/Wrap';
+@import './sub/festival';
+
+@import './sub/login';
